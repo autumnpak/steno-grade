@@ -43,7 +43,7 @@ async function generateExercise(fields = null) {
     } else {
         let low, high;
 
-        switch (fields.length) {
+        switch (fields.monkeytype_quote_length) {
         case "short":
             low = 0;
             high = 100;
@@ -68,7 +68,8 @@ async function generateExercise(fields = null) {
         }
 
         const filteredQuotes = quotes.filter((q) => q.text.length >= low && q.text.length <= high);
-        quote = filteredQuotes[Math.floor(quotes.length * Math.random())];
+        const quoteid = Math.floor(filteredQuotes.length * Math.random());
+        quote = filteredQuotes[quoteid];
     }
 
     const words = quote.text.trim().split(/\s+/);

@@ -1,5 +1,18 @@
-Steno Jig
+Steno Grade
 =========
+
+## Info on this fork
+
+This is a fork of Steno Grade, which is a fork of Steno Jig.
+Access it at https://autumnpak.github.io/steno-jig/
+
+So far, changes include:
+
+- Making monkeytype quote length selection work again
+
+---
+
+## Original Readme
 
 This is a little browser-based widget for typing drills. I'm using
 it to teach myself stenotype. It's still early in development, but
